@@ -17,6 +17,7 @@
 #include "tractyl_manuform.h"
 #include "transactions.h"
 #include <string.h>
+#include "DRV2605L.h"
 
 #ifdef CONSOLE_ENABLE
 #    include "print.h"
@@ -259,6 +260,7 @@ __attribute__((unused)) static void debug_charybdis_config_to_console(charybdis_
                                   config->raw, config->is_dragscroll_enabled, config->is_sniping_enabled, config->pointer_default_dpi, get_pointer_default_dpi(config), config->pointer_sniping_dpi, get_pointer_sniping_dpi(config)));
 #    endif // CONSOLE_ENABLE
 }
+
 
 bool process_record_kb(uint16_t keycode, keyrecord_t* record) {
     if (!process_record_user(keycode, record)) {

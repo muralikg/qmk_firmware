@@ -36,11 +36,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { 10, 10 }
 #define RGBLIGHT_LIMIT_VAL 80
 
-#define AUDIO_PIN       C6
+// #define AUDIO_PIN       C6
 
 /* serial.c configuration for split keyboard */
 #define SOFT_SERIAL_PIN D2
-#define EE_HANDS
+// #define EE_HANDS
 
 #define ENCODERS_PAD_A \
     { D5 }
@@ -49,3 +49,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* PMW33XX Settings */
 #define PMW33XX_CS_PIN B6
+
+#define TAPPING_TERM 175
+#define MASTER_RIGHT
+
+#define FB_ERM_LRA 0
+#define RATED_VOLTAGE 3
+#define V_RMS 2.3
+#define V_PEAK 3.30
+/* Library Selection */
+#define LIB_SELECTION 4
+#define DRV_GREETING 85
+#define DRV_MODE_DEFAULT 7
+#define NO_HAPTIC_MOD
+#define NO_HAPTIC_ALPHA
+#define NO_HAPTIC_NUMERIC
+#define NO_HAPTIC_LOCKKEYS
+#define NO_HAPTIC_NAV
+#define NO_HAPTIC_PUNCTUATION
+
+
+
+#define CHARYBDIS_DRAGSCROLL_REVERSE_Y
